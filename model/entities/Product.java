@@ -1,0 +1,47 @@
+package model.entities;
+
+public class Product {
+	private String name;
+	private Double price;
+	private Integer quantity;
+	
+	public Product(String name, Double price, Integer quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+	
+	// ***************** GETTERS *****************
+	
+	public String getName() {
+		return name;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+	
+	public Integer getQuantity() {
+		return quantity;
+	}
+	
+	// ***************** SETTERS *****************
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+	
+	// ***************** OTHER METHODS *****************
+	
+	public Double total() {
+		return price * quantity;
+	}
+}
